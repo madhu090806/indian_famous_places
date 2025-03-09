@@ -9,7 +9,7 @@ st.set_page_config(page_title="TravelVeda ",layout="centered")
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-csv_url = "indian_famous_places.csv"
+csv_url = "updated_indian_famous_places.csv"
 try:
     df = pd.read_csv(csv_url)
 except Exception as e:
